@@ -29,5 +29,3 @@ export const Dice = () => {
     />
   );
 };
-
-// henrik bester mann 
