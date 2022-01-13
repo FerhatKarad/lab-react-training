@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
+import Random from './components/Random';
+import BoxColor from './components/BoxColor';
 import ClickablePicture from './components/ClickablePicture';
 import LikeButton from './components/LikeButton';
 import { Dice } from './components/Dice';
 import Carousel from './components/Carousel';
-import IdCard from './components/IdCard';
-import Greetings from './components/Greetings';
-
 
 
 function App() {
@@ -31,8 +31,17 @@ function App() {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
         <Greetings lang="de" children='Ludwig'></Greetings>
-        <Greetings lang="fr"children='François'></Greetings>
+        <Greetings lang="fr" children='François'></Greetings>
+
+
+        <Random min={1} max={6} />
+        <Random min={1} max={100} />
+
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
+
         <LikeButton />  <LikeButton />
+
         <ClickablePicture
           img='/assets/images/maxence.png'
           imgClicked='/assets/images/maxence-glasses.png' />
