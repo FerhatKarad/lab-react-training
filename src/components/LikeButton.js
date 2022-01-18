@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-export default function LikeButton(props) {
+export default function LikeButton() {
 
     const [count, setCount] = useState(0)
     const clickHandler = () => {

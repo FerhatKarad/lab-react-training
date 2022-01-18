@@ -11,6 +11,7 @@ import ClickablePicture from './components/ClickablePicture';
 import LikeButton from './components/LikeButton';
 import { Dice } from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 
 function App() {
@@ -111,7 +112,14 @@ function App() {
         <ClickablePicture
           img='/assets/images/maxence.png'
           imgClicked='/assets/images/maxence-glasses.png' />
+
+
         <Dice />
+
+
+        <NumbersTable limit={12}/>
+
+
         {/* <Carousel
      imgs={[
     'https://randomuser.me/api/portraits/women/1.jpg',
@@ -120,6 +128,8 @@ function App() {
     'https://randomuser.me/api/portraits/men/2.jpg'
   ]}
 /> */}
+
+
 
       </header>
     </div>
